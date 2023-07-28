@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Apresentação", "0 - Apresentação", "{315CDBD8-D2EF-48BE-B567-347B4DE2BAAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Aplicação", "3 - Aplicação", "{B90BB4CF-56E3-415F-9B7F-43869C0E7089}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Dominio", "4 - Dominio", "{4CEDC0F4-AD74-4705-AE8B-C4089DDECFF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{4ABD00CF-3595-43A3-85BF-9F607D360A79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{F9044200-0830-4F58-B5D9-53C49AB6140D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{24C2F594-9A8E-4835-A5C1-75BC56541117}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{60839B4B-D317-4F75-8B85-1FCCA8B66D27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.3 Comunicação", "4.3 Comunicação", "{410D2FAE-DC7A-4574-8B6B-E3450919DCE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - WebApi", "1 - WebApi", "{CBCA888F-8F1F-4504-93C0-EC5F677D6A27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacaoMatematica.API", "src\OperacaoMatematica.API\OperacaoMatematica.API.csproj", "{DE4C7FBB-CAF1-4142-A56F-497AEC9C294E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacaoMatematica.Application", "src\OperacaoMatematica.Application\OperacaoMatematica.Application.csproj", "{960FB16F-E898-49D7-AD76-DBB7DB55D04B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacaoMatematica.Dominio", "src\OperacaoMatematica.Dominio\OperacaoMatematica.Dominio.csproj", "{46273721-16F1-4BAF-8D42-87CC0C5AD9D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacaoMatematica.Dominio.Core", "src\OperacaoMatematica.Dominio.Core\OperacaoMatematica.Dominio.Core.csproj", "{8A8E8FB6-C475-4FFB-A35A-3F2FE5848A3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacaoMatematica.Infra.CrossCutting.Ioc", "src\OperacaoMatematica.Infra.CrossCutting.Ioc\OperacaoMatematica.Infra.CrossCutting.Ioc.csproj", "{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE4C7FBB-CAF1-4142-A56F-497AEC9C294E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4C7FBB-CAF1-4142-A56F-497AEC9C294E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4C7FBB-CAF1-4142-A56F-497AEC9C294E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4C7FBB-CAF1-4142-A56F-497AEC9C294E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960FB16F-E898-49D7-AD76-DBB7DB55D04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960FB16F-E898-49D7-AD76-DBB7DB55D04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960FB16F-E898-49D7-AD76-DBB7DB55D04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960FB16F-E898-49D7-AD76-DBB7DB55D04B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46273721-16F1-4BAF-8D42-87CC0C5AD9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46273721-16F1-4BAF-8D42-87CC0C5AD9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46273721-16F1-4BAF-8D42-87CC0C5AD9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46273721-16F1-4BAF-8D42-87CC0C5AD9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8E8FB6-C475-4FFB-A35A-3F2FE5848A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8E8FB6-C475-4FFB-A35A-3F2FE5848A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8E8FB6-C475-4FFB-A35A-3F2FE5848A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8E8FB6-C475-4FFB-A35A-3F2FE5848A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24C2F594-9A8E-4835-A5C1-75BC56541117} = {4ABD00CF-3595-43A3-85BF-9F607D360A79}
+		{60839B4B-D317-4F75-8B85-1FCCA8B66D27} = {4ABD00CF-3595-43A3-85BF-9F607D360A79}
+		{410D2FAE-DC7A-4574-8B6B-E3450919DCE2} = {4ABD00CF-3595-43A3-85BF-9F607D360A79}
+		{DE4C7FBB-CAF1-4142-A56F-497AEC9C294E} = {CBCA888F-8F1F-4504-93C0-EC5F677D6A27}
+		{960FB16F-E898-49D7-AD76-DBB7DB55D04B} = {B90BB4CF-56E3-415F-9B7F-43869C0E7089}
+		{46273721-16F1-4BAF-8D42-87CC0C5AD9D1} = {4CEDC0F4-AD74-4705-AE8B-C4089DDECFF8}
+		{8A8E8FB6-C475-4FFB-A35A-3F2FE5848A3A} = {4CEDC0F4-AD74-4705-AE8B-C4089DDECFF8}
+		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C} = {60839B4B-D317-4F75-8B85-1FCCA8B66D27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74FAF7AD-016C-424C-90E8-1641E7D1D40A}
+	EndGlobalSection
+EndGlobal
