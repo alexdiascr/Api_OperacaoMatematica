@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace OperacaoMAtematica.Services.API.Tests
 {
+    [CollectionDefinition(nameof(NumeroTextFixtureCollection))]
+    public class NumeroTextFixtureCollection : ICollectionFixture<NumeroTextFixture>
+    { }
+
     public class NumeroTextFixture
     {
         public NumeroService numeroService;

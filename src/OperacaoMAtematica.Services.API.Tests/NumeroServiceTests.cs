@@ -2,6 +2,7 @@ using OperacaoMatematica.Dominio.ProdutoRoot;
 
 namespace OperacaoMAtematica.Services.API.Tests
 {
+    [Collection(nameof(NumeroTextFixtureCollection))]
     public class NumeroServiceTests
     {
         private readonly NumeroTextFixture _numeroTextFixture;
