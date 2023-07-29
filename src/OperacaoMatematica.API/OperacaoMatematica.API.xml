@@ -4,7 +4,7 @@
         <name>OperacaoMatematica.API</name>
     </assembly>
     <members>
-        <member name="M:SomaNumeros.API.V1.Controllers.Numeros.NumeroController.AcaoMetodoPost(OperacaoMatematica.Application.ViewModels.Produto.NumeroViewModel)">
+        <member name="M:SomaNumeros.API.V1.Controllers.Numeros.NumeroController.AcaoMetodoPost(OperacaoMatematica.Application.ViewModels.Produto.ViewModel)">
              <summary>
              Post para a operação de dois números
              </summary>

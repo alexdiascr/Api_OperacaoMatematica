@@ -9,6 +9,7 @@ namespace OperacaoMatematica.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<Numero, NumeroViewModel>().ReverseMap();
+            CreateMap<Numero, ViewModel>().ReverseMap();
         }
     }
 }

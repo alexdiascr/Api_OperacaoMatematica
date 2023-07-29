@@ -22,6 +22,7 @@ namespace SomaNumeros.API.V1.Controllers.Numeros
                                  : base(notificador)
         {
             _appService = appService;
+            _mapper = mapper;
         }
 
         /// <summary>
@@ -48,9 +49,9 @@ namespace SomaNumeros.API.V1.Controllers.Numeros
         /// <response code="200">Operação realizada com sucesso.</response>
         /// <response code="400">Operação não realizada com sucesso.</response>
         [HttpPost]
-        [ProducesResponseType(typeof(SucessRetorno<NumeroViewModel>), 200)]
+        [ProducesResponseType(typeof(SucessRetorno<ViewModel>), 200)]
         [ProducesResponseType(typeof(NotFoundResult), 400)]
-        public async Task<IActionResult> AcaoMetodoPost(NumeroViewModel viewmodel)
+        public async Task<IActionResult> AcaoMetodoPost(ViewModel viewmodel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
 
@@ -68,7 +69,7 @@ namespace SomaNumeros.API.V1.Controllers.Numeros
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(SucessRetorno<NumeroViewModel>), 200)]
+        [ProducesResponseType(200)]
         [ProducesResponseType(typeof(NotFoundResult), 400)]
         public async Task<IActionResult> AcaoMetodoGet()
         {
