@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  operacaomatematica.api:
+    image: ${DOCKER_REGISTRY-}operacaomatematicaapi
+    build:
+      context: .
+      dockerfile: src\OperacaoMatematica.API\Dockerfile

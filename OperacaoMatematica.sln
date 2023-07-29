@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacaoMatematica.Dominio.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperacaoMatematica.Infra.CrossCutting.Ioc", "src\OperacaoMatematica.Infra.CrossCutting.Ioc\OperacaoMatematica.Infra.CrossCutting.Ioc.csproj", "{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperacaoMAtematica.Services.API.Tests", "src\OperacaoMAtematica.Services.API.Tests\OperacaoMAtematica.Services.API.Tests.csproj", "{3F42A642-C21A-4A0B-B176-0CCD67C8ABBB}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{28EF7CCA-1111-4CF0-A9FF-089CD111D540}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F42A642-C21A-4A0B-B176-0CCD67C8ABBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F42A642-C21A-4A0B-B176-0CCD67C8ABBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F42A642-C21A-4A0B-B176-0CCD67C8ABBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F42A642-C21A-4A0B-B176-0CCD67C8ABBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28EF7CCA-1111-4CF0-A9FF-089CD111D540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28EF7CCA-1111-4CF0-A9FF-089CD111D540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28EF7CCA-1111-4CF0-A9FF-089CD111D540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28EF7CCA-1111-4CF0-A9FF-089CD111D540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +82,7 @@ Global
 		{46273721-16F1-4BAF-8D42-87CC0C5AD9D1} = {4CEDC0F4-AD74-4705-AE8B-C4089DDECFF8}
 		{8A8E8FB6-C475-4FFB-A35A-3F2FE5848A3A} = {4CEDC0F4-AD74-4705-AE8B-C4089DDECFF8}
 		{8B0DCCC9-D7AF-4AD8-8503-3921E962EC4C} = {60839B4B-D317-4F75-8B85-1FCCA8B66D27}
+		{3F42A642-C21A-4A0B-B176-0CCD67C8ABBB} = {F9044200-0830-4F58-B5D9-53C49AB6140D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74FAF7AD-016C-424C-90E8-1641E7D1D40A}

@@ -22,7 +22,7 @@ builder.Services.AddApiConfig(builder.Configuration);
 //builder.Services.AddAuthSetup(builder.Configuration);
 
 // Swagger Config
-builder.Services.AddSwaggerConfig();
+builder.Services.AddSwaggerSetup();
 
 // .NET Native DI Abstraction
 builder.Services.AddDependencyInjectionSetup();

@@ -1,49 +1,34 @@
 ﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
 
 namespace SomaNumeros.Services.API.Configurations
 {
-    public static class SwaggerConfig
+    public static class SwaggerSetup
     {
-        public static void AddSwaggerConfig(this IServiceCollection services)
+        public static void AddSwaggerSetup(this IServiceCollection services)
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(s =>
             {
-                //c.OperationFilter<SwaggerDefaultValues>();
-
-                c.SwaggerDoc("v1", new OpenApiInfo
+                s.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "SomaNumeros API",
                     Version = "v1",
-                    Description = "Solução SomaNumeros",
-                    Contact = new OpenApiContact()
-                    {
-                        Name = "Development",
-                        Email = "contato@gmail.com"                   
-                        //Url = new Uri("")
-                    },
-                    License = new OpenApiLicense() 
-                    { 
-                        Name = "MIT", 
-                        Url = new Uri("https://opensource.org/licenses/MIT") 
-                    }
+                    Title = "Operações Matemáticas API",
                 });
 
-                //Autorização via JWT no Swagger
-                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = "Insira o token JWT desta maneira: Bearer {seu token}",
                     Name = "Authorization",
-                    BearerFormat = "JWT",
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey,
                     Scheme = "Bearer"
                 });
 
-                c.AddSecurityRequirement(new OpenApiSecurityRequirement
-                {
+                s.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
                     {
                         new OpenApiSecurityScheme
                         {
@@ -55,22 +40,22 @@ namespace SomaNumeros.Services.API.Configurations
                             Scheme = "oauth2",
                             Name = "Bearer",
                             In = ParameterLocation.Header,
+
                         },
                         new List<string>()
                     }
-                });
+            });
 
-                //string caminhoAplicacao = PlatformServices.Default.Application.ApplicationBasePath;
-                //string nomeAplicacao = PlatformServices.Default.Application.ApplicationName;
-                //string caminhoXmlDoc = Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
+                string caminhoAplicacao = PlatformServices.Default.Application.ApplicationBasePath;
+                string nomeAplicacao = PlatformServices.Default.Application.ApplicationName;
+                string caminhoXmlDoc = System.IO.Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
 
-                //c.IncludeXmlComments(caminhoXmlDoc);
+                s.IncludeXmlComments(caminhoXmlDoc);
             });
         }
 
         public static void UseSwaggerConfig(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
         {
-            //app.UseMiddleware<SwaggerAuthorizedMiddleware>();
             if (app == null) throw new ArgumentNullException(nameof(app));
 
             app.UseSwagger();

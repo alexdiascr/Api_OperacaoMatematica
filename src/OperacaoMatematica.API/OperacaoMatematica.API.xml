@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OperacaoMatematica.API</name>
+    </assembly>
+    <members>
+        <member name="M:SomaNumeros.API.V1.Controllers.Numeros.NumeroController.AcaoMetodoPost(OperacaoMatematica.Application.ViewModels.Produto.NumeroViewModel)">
+             <summary>
+             Post para a operação de dois números
+             </summary>
+             <param name="viewmodel">Dto para o post</param>
+             <returns></returns>
+             /// <remarks>
+             Exemplo de requisição
+            
+                 POST /api/v1/operacoesmatematicas
+                 {
+                   "dateTime": "2023-07-29T00:34:28.473Z",
+                   "nome": "string",
+                   "primeiroValor": 0,
+                   "segundoValor": 0,
+                   "operadorMatematico": "string",
+                   "resultado": 0
+                 }
+                 Obs: para o campo operadorMatematico só será aceito operação do tipo "+", "-" "/"
+                 Ou seja, somente operação do tipo soma, subtração e divisão. 
+                 Nesse campo só será aceito um caracter, + ou - ou /
+             </remarks>
+             <response code="200">Operação realizada com sucesso.</response>
+             <response code="400">Operação não realizada com sucesso.</response>
+        </member>
+    </members>
+</doc>
